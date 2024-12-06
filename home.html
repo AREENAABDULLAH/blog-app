@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="logo">
+            <i class="fab fa-instagram"></i>
+        </div>
+        <h2>Coranu</h2>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <small>Your email</small>
+        <input type="password"  id="password" placeholder="Enter your password" required>
+        <small>Your password</small>
+        <p id="createAccountPrompt">If you don't have an account, <a href="register.html">create one here</a>.</p>                
+            <!-- googlesignin -->
+        <button id="googleBtn"> <img src="./images-removebg-preview (2).png" alt="" width="60px" height="25px">Continue with google</button>
+        <br>
+        <br> 
+        <button id="loginBtn">login</button>
+    </div>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="home.js"></script>
+</body>
+</html>

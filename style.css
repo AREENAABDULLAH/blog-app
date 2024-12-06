@@ -1,0 +1,219 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color:  #E1306C;;
+    padding: 10px 20px;
+}
+
+.navbar-left {
+    flex: 1;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-dp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.login-button {
+    padding: 10px 20px;
+    background-color:  #E1306C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background-color:  #d15a82;
+}
+
+.logout-btn {
+    background-color: #E1306C;;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    background-color: #e53935;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-left {
+        margin-bottom: 10px;
+    }
+
+    .navbar-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .user-info {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logout-btn {
+        margin-left: auto;
+    }
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container for the Blog Post */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Blog Button */
+.blog-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color:  #e53935;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.blog-button:hover {
+    background-color:  #db5957;
+}
+
+/* Alert for incomplete post */
+.alert {
+    display: none;
+    color: #dc3545;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Post Content Display */
+.post-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.post-time {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+}
+/* Action Buttons (Edit and Delete) */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  .edit-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Edit Fields */
+  .edit-fields {
+    margin-top: 20px;
+  }
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .blog-button {
+        font-size: 14px;
+    }
+
+    .input-field, textarea {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coranu</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <span class="brand-name">Coranu</span>
+        </div>
+        <div class="navbar-right">
+            <div class="user-info">
+               
+                <!-- <img src="profile.jpg" alt="User Profile Picture" class="user-dp" id="user-dp"> -->
+                <button class="logout-btn" id="login-btn">Login</button>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>Welcome to My Blog</h1>
+
+        <!-- Blog Post Button -->
+        <button class="blog-button" id="post-button">Post Title: Click to View</button>
+
+        <!-- Alert Message if Post is not filled -->
+        <div class="alert" id="alert">Please fill out the post before clicking!</div>
+
+        <!-- Input Fields for Title and Content -->
+        <input type="text" class="input-field" id="post-title" placeholder="Enter the post title">
+        <textarea class="input-field" id="post-content" rows="5" placeholder="Write your post content"></textarea>
+       
+
+            <div id="postDetails" class="post-details" style="display: none;"></div>
+        <!-- The Blog Post Content and Date -->
+        <div class="post-content" id="post-content-display">
+            <p><strong>Post Title: </strong><span id="display-title"></span></p>
+            <p><strong>Post Content: </strong><span id="display-content"></span></p>
+            <p class="post-time" id="post-time"></p>
+            <!-- !-- Edit and Delete Buttons - -->
+        <div class="action-buttons">
+            <!-- <button id="editBtn" class="edit-btn">Edit</button> -->
+          <button id="deleteBtn" class="delete-btn">Delete</button>
+        </div>
+    </div>
+    <script type="module" src="firebase.js"></script>
+     <script type="module" src="app.js"></script>
+</body>
+</html>

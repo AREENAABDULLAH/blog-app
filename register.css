@@ -1,0 +1,32 @@
+.container {
+    max-width: 800px;
+    margin-top: 100px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Centering the container */
+    padding: 20px;
+    border: 2px solid #333; /* Border for the container */
+    background-color: #ffffff; /* Background color */
+    text-align: center; /* Center text */
+  }
+  
+  /* Responsive styles for mobile devices */
+  @media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Reduced padding for mobile */
+    }
+  }
+  
+  #registerBtn {
+    background-color: darkcyan;
+    /* background-image: url(/images/360_F_232925587_st4gM8b3TJHtjjddCIUNyVyFJmZqMmn4.jpg); */
+    color: white;
+   height: 30px;
+  }
+  
+  #email{
+    width: 190px;
+    height: 30px;
+  }
+  #password{
+    width: 190px;
+    height: 30px;
+  }
